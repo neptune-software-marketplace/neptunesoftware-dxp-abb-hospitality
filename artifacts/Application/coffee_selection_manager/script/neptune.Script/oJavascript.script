@@ -1,0 +1,319 @@
+function configInput() {
+
+    console.log("setting component")
+    oHTMLObjectCameraUpload.setContent('<input type="file" accept="image/*" id="file-input"  style="display:none" multiple>')
+    setTimeout(function () {
+
+        console.log("fileElem:")
+        fileElem = document.getElementById("file-input");
+        console.log(fileElem)
+
+        // After setting the oHTMLObject, create the EventListener
+        setTimeout(function () {
+            const fileInput = oFlexBoxCameraUpload.getDomRef();
+            fileInput.addEventListener('change', (e) => handleFileSelect(e.target.files[0]));
+        }, 100);
+
+        function handleFileSelect(f) {
+            var reader = new FileReader();
+
+            reader.onload = (function (theFile) {
+                return function (e) {
+                    var binaryData = e.target.result;
+
+                    // Converting Binary Data to base 64
+                    var base64String = window.btoa(binaryData);
+
+                    var fullBase64picture = "data:image/png;base64," + base64String;
+
+                    // Set the fullBase64 as hte image source
+                    console.log("setting to oImagePreview")
+                    oImagePreview.setSrc(fullBase64picture);
+                    oImagePreview.setVisible(true);
+                    sap.m.MessageToast.show("Image successfully uploaded")
+                    oLabelPreview.setVisible(true);
+
+                };
+            })(f);
+            reader.readAsBinaryString(f);
+        }
+    }, 10);
+
+}
+
+function configInputPod() {
+
+    console.log("setting component")
+    oHTMLObjectCameraUploadPod.setContent('<input type="file" accept="image/*" id="file-input-pod"  style="display:none" multiple>')
+    setTimeout(function () {
+
+        console.log("fileElemPod:")
+        fileElemPod = document.getElementById("file-input-pod");
+        console.log(fileElemPod)
+
+        // After setting the oHTMLObject, create the EventListener
+        setTimeout(function () {
+            const fileInput1 = oFlexBoxCameraUploadPod.getDomRef();
+            fileInput1.addEventListener('change', (e) => handleFileSelect(e.target.files[0]));
+        }, 100);
+
+        function handleFileSelect(f) {
+            var reader = new FileReader();
+
+            reader.onload = (function (theFile) {
+                return function (e) {
+                    var binaryData = e.target.result;
+
+                    // Converting Binary Data to base 64
+                    var base64String = window.btoa(binaryData);
+
+                    var fullBase64picture = "data:image/png;base64," + base64String;
+
+                    // Set the fullBase64 as hte image source
+                    console.log("setting to oImagePreview")
+                    oImagePreview2.setSrc(fullBase64picture);
+                    oImagePreview2.setVisible(true);
+                    sap.m.MessageToast.show("Image successfully uploaded")
+                    oLabelPreview2.setVisible(true);
+
+                };
+            })(f);
+            reader.readAsBinaryString(f);
+        }
+    }, 10);
+
+}
+
+
+
+
+function uploadImage() {
+
+    // Select file from device 
+
+    setTimeout(function () {
+
+        fileElem = document.getElementById("file-input");
+        fileElem.click();
+
+    }, 200);
+
+}
+
+function uploadImagePod() {
+
+    // Select file from device 
+
+    setTimeout(function () {
+
+        fileElemPod = document.getElementById("file-input-pod");
+        fileElemPod.click();
+
+    }, 200);
+
+}
+
+
+function submitOption() {
+
+    // let getValcomponents = [inputName];
+    let getValcomponents = [oInputOption, oInputOptionDesc];
+    getValcomponents.forEach(component => component.setValueState("None"));
+
+    // **** VALIDATION SECTION ******
+    // Use "Return" to get out of the script
+    if (oInputOption.getValue() === "") {
+        oInputOption.setValueState("Error")
+        sap.m.MessageToast.show("Please provide an Option Title");
+        return
+    };
+
+    if (oInputOptionDesc.getValue() === "") {
+        oInputOptionDesc.setValueState("Error")
+        sap.m.MessageToast.show("Please provide an Option Description");
+        return
+    };
+
+    if (oImagePreview.getSrc() === "") {
+        oButton.setType("Reject")
+        sap.m.MessageToast.show("Please upload an Image");
+        return
+    };
+
+    // Create the empty Object
+    let final_data = {}
+
+    // Add attributes to the Object, based on the inputs
+    final_data.questionNumber = oTextQNumberHidden.getText();
+    final_data.answerValue = oTextAnsValue.getText();
+    final_data.answerText = oInputOption.getValue();
+    final_data.answerDescription = oInputOptionDesc.getValue()
+    final_data.answerImage = oImagePreview.getSrc();
+
+    // Log the Object
+    console.log(final_data);
+
+    // Assign the data object to "Options"
+    var options = { data: final_data };
+
+    // Trigger the API and pass the "Options"
+    apioRestAPIPostAnswer(options);
+
+    // Call the function to clear the form
+    clearForm();
+
+    // Message toast 
+    sap.m.MessageToast.show("Option successfully added!");
+
+}
+
+//-----------------------------------------------------------------------//
+
+// Clear form function
+
+function clearForm() {
+
+    // Assign input fields to a variable 
+    let getValcomponents = [oInputOption, oInputOptionDesc];
+
+    // Arrow function:
+    getValcomponents.forEach(component => component.setValue(""));
+
+    // Set Image source to empty string
+    oComboBox.setValue("");
+    oImagePreview.setSrc("");
+    oImagePreview.setVisible(false);
+    oLabelPreview.setVisible(false);
+
+}
+
+
+function submitQuestion() {
+
+    // let getValcomponents = [inputName];
+    let getValcomponents = [oInputQuestion];
+    getValcomponents.forEach(component => component.setValueState("None"));
+
+    // **** VALIDATION SECTION ******
+    // Use "Return" to get out of the script
+    if (oInputQuestion.getValue() === "") {
+        oInputQuestion.setValueState("Error")
+        sap.m.MessageToast.show("Please enter a question");
+        return
+    };
+
+
+    // Create the empty Object
+    let final_data = {}
+
+    // Add attributes to the Object, based on the inputs
+    final_data.questionNumber = oTextQuestionIDHidden.getText();
+    final_data.questionText = oInputQuestion.getValue();
+
+    // Log the Object
+    console.log(final_data);
+
+    // Assign the data object to "Options"
+    var options = { data: final_data };
+
+    // Trigger the API and pass the "Options"
+    apioRestAPIPostQuestion(options);
+
+    // Call the function to clear the form
+    clearFormQuestion();
+
+    // Message toast 
+    sap.m.MessageToast.show("Question successfully added!");
+
+}
+
+//-----------------------------------------------------------------------//
+
+// Clear form function
+
+function clearFormQuestion() {
+
+    // Assign input fields to a variable 
+    let getValcomponents = [oInputQuestion];
+
+    // Arrow function:
+    getValcomponents.forEach(component => component.setValue(""));
+
+}
+
+
+
+function submitOptionPod() {
+
+    // let getValcomponents = [inputName];
+    let getValcomponents = [oInputPodText, oInputPodDesc];
+    getValcomponents.forEach(component => component.setValueState("None"));
+
+    // // **** VALIDATION SECTION ******
+    // // Use "Return" to get out of the script
+    // if (oInputPodText.getValue() === "") {
+    //     oInputPodText.setValueState("Error")
+    //     sap.m.MessageToast.show("Please provide a Pod Title");
+    //     return
+    // };
+
+    // if (oInputPodDesc.getValue() === "") {
+    //     oInputPodDesc.setValueState("Error")
+    //     sap.m.MessageToast.show("Please provide a Pod Description");
+    //     return
+    // };
+
+    // if (oImagePreview2.getSrc() === "") {
+    //     oButtonUpload2.setType("Reject")
+    //     sap.m.MessageToast.show("Please upload an Image");
+    //     return
+    // };
+
+    // Create the empty Object
+    let final_data = {}
+
+    // Add attributes to the Object, based on the inputs
+    final_data.TitlePod = oInputPodText.getValue();
+    final_data.DescriptionPod = oInputPodDesc.getValue();
+    final_data.FilterValue = oTextQNumberHidden1.getText();
+    final_data.ImagePod = oImagePreview2.getSrc();
+
+    // Log the Object
+    console.log("final data");
+    console.log(final_data);
+
+    // Assign the data object to "Options"
+    var options = { data: final_data };
+
+    // Trigger the API and pass the "Options"
+    apioRestAPIPostPod(options);
+
+
+    // Message toast 
+    sap.m.MessageToast.show("Pod successfully added!");
+
+
+}
+
+//-----------------------------------------------------------------------//
+
+// Clear form function
+
+function clearFormPod() {
+
+    // Assign input fields to a variable 
+    let getValcomponents = [oInputPodText, oInputPodDesc];
+
+    // Arrow function:
+    getValcomponents.forEach(component => component.setValue(""));
+
+    // Set Image source to empty string
+    oComboBox2.setValue("");
+    oImagePreview2.setSrc("");
+    oImagePreview2.setVisible(false);
+    oLabelPreview2.setVisible(false);
+
+}
+
+
+

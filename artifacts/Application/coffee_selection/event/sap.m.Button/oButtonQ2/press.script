@@ -1,0 +1,41 @@
+increase();
+var qLength = oTextQLengthHidden.getText();
+
+console.log("questionNumber");
+console.log(questionNumber);
+console.log("qLength");
+console.log(qLength);
+
+if (questionNumber <= qLength) {
+    getQuestion();
+} 
+if (questionNumber == qLength) {
+    oButtonQ2.setVisible(false);
+    oButtonSubmit.setVisible(true);
+}
+var myAnswerData = modeloModelArrayMyAnswers.getData()
+
+
+var selectedItem = oListAnswers.getSelectedItem()
+var selectedData = selectedItem.getBindingContext()
+console.log(selectedData.getObject())
+
+var data = selectedData.getObject();
+
+var answer = data.answerText;
+
+console.log(answer);
+
+
+myAnswerData.push(answer)
+modeloModelArrayMyAnswers.setData(myAnswerData)
+
+console.log(modeloModelArrayMyAnswers.getData())
+
+oListAnswers.removeSelections();
+
+
+
+// increase();
+// getQuestion();
+//getQuestion2();

@@ -1,0 +1,30 @@
+/* .sapMITBSelected .sapMITBFilterDefault {
+    background: #000;
+    color: #ffffff;
+}
+
+.sapMITBFilterDefault {
+    color: #000;
+}
+
+.sapMITBFilterIcon {
+    border: 1px solid #000;
+}
+
+.sapMITBSelected > .sapMITBContentArrow::after {
+    background: #000;
+} */
+
+.mainPage{
+    background-color: white;
+}
+
+.tileOptions {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.titleTile {
+    font-size: 18px;
+}

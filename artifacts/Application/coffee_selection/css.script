@@ -1,0 +1,37 @@
+.titleCoffee {
+    font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+    font-size: 19px;
+}
+
+
+
+.pageResult {
+    background-color: white;
+}
+
+.pageDetails {
+    background-image: url(https://dxpdemo.neptune-software.cloud/media/root/Hospitality/coffeebeans3.png);
+    background-color: white;
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-size: auto;
+    background-position-x: 108px;
+}
+
+.sapMLIB {
+    border-bottom: none !important;
+}
+
+.imageAnswer {
+    border-radius: 4px;
+}
+
+.titleMain {
+    font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+    font-size: 22px;
+}
+
+.subTitle {
+    font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+}

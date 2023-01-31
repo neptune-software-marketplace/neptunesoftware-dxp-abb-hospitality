@@ -1,0 +1,8 @@
+var myQuestionArray = xhr.responseJSON
+modeloPage.setData(myQuestionArray[0])
+
+var questions = JSON.parse(xhr.responseText);
+console.log("questions");
+console.log(questions);
+
+

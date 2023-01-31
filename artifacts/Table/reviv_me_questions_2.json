@@ -1,0 +1,27 @@
+{
+	"id": "b7151aee-2f51-ed11-ade6-a085fc67ade0",
+	"createdAt": "2022-10-21T11:03:04.413Z",
+	"createdBy": "lloyd.trevarthen@neptune-software.com",
+	"fields": [
+		{
+			"id": "16995c3a-665b-4866-b2d5-55ee8d8293ae",
+			"fieldName": "questionNumber",
+			"fieldType": "text"
+		},
+		{
+			"id": "0758a429-8098-44fc-b846-aeb056f499d2",
+			"fieldName": "questionText",
+			"fieldType": "text"
+		}
+	],
+	"indices": [],
+	"foreignKeys": [],
+	"name": "reviv_me_questions_2",
+	"description": null,
+	"ver": "23.1.25.1041",
+	"enableAudit": false,
+	"includeDataInPackage": true,
+	"package": "6a88e9ef-1b7a-ed11-9f60-000d3a6554d3",
+	"rolesRead": [],
+	"rolesWrite": []
+}

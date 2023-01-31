@@ -1,0 +1,20 @@
+apioRestAPIQues();
+// **** VALIDATION SECTION ******
+// Use "Return" to get out of the script
+if (oInputName.getValue() === "") {
+    oInputName.setValueState("Error")
+    sap.m.MessageToast.show("Please enter your Name");
+    return
+};
+
+if (oInputAge.getValue() === "") {
+    oInputAge.setValueState("Error")
+    sap.m.MessageToast.show("Please enter your age");
+    return
+};
+
+apioRestAPIPods();
+
+getQuestion();
+
+oApp.to(oPage);

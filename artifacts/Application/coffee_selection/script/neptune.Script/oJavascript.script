@@ -1,0 +1,35 @@
+var questionNumber = 1;
+
+console.log(questionNumber);
+
+function increase() {
+    questionNumber++;
+}
+
+
+//Get question 1
+function getQuestion() {
+
+    var options = {
+        parameters: {
+            "where": JSON.stringify({ "questionNumber": questionNumber }),
+        }
+    };
+
+    apioRestAPIAns(options);
+
+    var options = {
+        parameters: {
+            "where": JSON.stringify({ "questionNumber": questionNumber }),
+        }
+    };
+    console.log(questionNumber);
+    apioRestAPIQues(options);
+}
+
+
+getQuestion();
+
+modeloModelArrayMyAnswers.setData([])
+
+apioRestAPIGetNoOfQuestions();

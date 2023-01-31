@@ -1,0 +1,4 @@
+//submitOption();
+submitOptionPod();
+// Call the function to clear the form
+clearFormPod();

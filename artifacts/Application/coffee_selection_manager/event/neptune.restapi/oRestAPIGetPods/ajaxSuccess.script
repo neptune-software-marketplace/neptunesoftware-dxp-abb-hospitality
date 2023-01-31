@@ -1,0 +1,3 @@
+var pods = JSON.parse(xhr.responseText);
+
+console.log(pods);

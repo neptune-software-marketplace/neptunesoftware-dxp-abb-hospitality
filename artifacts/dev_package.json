@@ -1,0 +1,123 @@
+{
+	"id": "6a88e9ef-1b7a-ed11-9f60-000d3a6554d3",
+	"createdAt": "2022-12-12T12:53:13.623Z",
+	"createdBy": "cezar",
+	"git": {
+		"remote": "https://github.com/neptune-software-marketplace/neptunesoftware-dxp-abb-hospitality"
+	},
+	"name": "neptunesoftware-dxp-abb-hospitality",
+	"description": "DXP Hospitality Scenario - Coffee Selection",
+	"ver": "23.1.31.1024",
+	"enableCICD": true,
+	"apps": [
+		{
+			"id": "d301aa3e-50a1-ed11-994a-0022489f9953",
+			"application": "coffee_selection",
+			"title": "",
+			"description": ""
+		},
+		{
+			"id": "9a98f66b-50a1-ed11-994a-0022489f9953",
+			"application": "coffee_selection_manager",
+			"title": "",
+			"description": ""
+		}
+	],
+	"api": [
+		{
+			"id": "e14bba51-3051-ed11-ade6-a085fc67ade0",
+			"name": "API reviv_me_questions_2",
+			"description": null,
+			"apiGroup": null
+		},
+		{
+			"id": "a2a8e30e-ea4a-ed11-a27c-dc984005a2a9",
+			"name": "API reviv_coffeepods_demo",
+			"description": null,
+			"apiGroup": null
+		},
+		{
+			"id": "0835b359-3051-ed11-ade6-a085fc67ade0",
+			"name": "API reviv_me_answers_2",
+			"description": null,
+			"apiGroup": null
+		}
+	],
+	"odataSource": [],
+	"odataMock": [],
+	"dictionary": [
+		{
+			"id": "ba5f7c99-e94a-ed11-a27c-dc984005a2a9",
+			"name": "reviv_coffeepods_demo",
+			"description": null
+		},
+		{
+			"id": "b7151aee-2f51-ed11-ade6-a085fc67ade0",
+			"name": "reviv_me_questions_2",
+			"description": null
+		},
+		{
+			"id": "a1c8480a-3051-ed11-ade6-a085fc67ade0",
+			"name": "reviv_me_answers_2",
+			"description": null
+		}
+	],
+	"jsclass": [],
+	"jsscript_group": [],
+	"theme": [],
+	"pdf": [],
+	"rulesengine": [],
+	"reports": [],
+	"api_authentication": [],
+	"api_group": [],
+	"tile": [
+		{
+			"id": "dd3d16aa-074e-ed11-a27c-dc984005a2a9",
+			"description": "",
+			"name": "Coffee_Selection"
+		},
+		{
+			"id": "b727feb4-074e-ed11-a27c-dc984005a2a9",
+			"description": "",
+			"name": "Coffee_Selection_Manager"
+		},
+		{
+			"id": "14d21ba1-2490-ed11-9f5f-000d3a66ec63",
+			"description": "",
+			"name": "Hospitality-main"
+		}
+	],
+	"category": [
+		{
+			"id": "2339dc7f-074e-ed11-a27c-dc984005a2a9",
+			"description": null,
+			"name": "coffee_selection_tilegroup"
+		}
+	],
+	"launchpad": [
+		{
+			"id": "caf4806d-074e-ed11-a27c-dc984005a2a9",
+			"name": "Hospitality_Launchpad",
+			"description": null
+		}
+	],
+	"certificates": [],
+	"role": [],
+	"systems": [],
+	"doc": [],
+	"wf_notifications": [],
+	"department": [],
+	"script_scheduler": [],
+	"wf_definition": [],
+	"connector": [],
+	"events": [],
+	"media_library": [
+		{
+			"id": "DD6BEAC6-4DA1-ED11-994A-0022489F9953",
+			"updatedAt": "2023-01-31T09:58:15.030Z",
+			"name": "Hospitality",
+			"parent": null,
+			"package": "6A88E9EF-1B7A-ED11-9F60-000D3A6554D3"
+		}
+	]
+}

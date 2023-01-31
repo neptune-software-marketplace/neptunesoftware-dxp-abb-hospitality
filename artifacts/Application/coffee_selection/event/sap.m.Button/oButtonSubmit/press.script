@@ -1,0 +1,52 @@
+var myAnswerData = modeloModelArrayMyAnswers.getData()
+
+var selectedItem = oListAnswers.getSelectedItem()
+var selectedData = selectedItem.getBindingContext()
+console.log(selectedData.getObject())
+
+var data = selectedData.getObject();
+
+var answer = data.answerText;
+
+console.log(answer);
+
+
+myAnswerData.push(answer)
+
+modeloModelArrayMyAnswers.setData(myAnswerData)
+
+console.log(modeloModelArrayMyAnswers.getData())
+
+oListAnswers.removeSelections();
+
+
+oApp.to(oPageResult);
+
+var arrayData = modeloModelArrayMyAnswers.getData();
+
+var arrayString = arrayData.toString();
+
+console.log(arrayData.toString());
+console.log("Array");
+
+console.log(arrayData.join(' '));
+
+var mainFilter = arrayData.join(' ');
+
+var q1 = arrayData[0];
+var q2 = arrayData[1];
+var q3 = arrayData[2];
+var q4 = arrayData[3];
+var q5 = arrayData[4];
+var q6 = arrayData[5];
+
+
+const binding = oListCoffeePods.getBinding("items");
+const filter1 = new sap.ui.model.Filter("FilterValue", "Contains", q1);
+const filter2 = new sap.ui.model.Filter("FilterValue", "Contains", q2);
+const filter3 = new sap.ui.model.Filter("FilterValue", "Contains", q3);
+const filter4 = new sap.ui.model.Filter("FilterValue", "Contains", q4);
+const filter5 = new sap.ui.model.Filter("FilterValue", "Contains", q5);
+const filter6 = new sap.ui.model.Filter("FilterValue", "Contains", q6);
+
+binding.filter([filter1, filter2, filter3, filter4, filter5, filter6]);

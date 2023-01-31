@@ -1,0 +1,342 @@
+{
+	"id": "a2a8e30e-ea4a-ed11-a27c-dc984005a2a9",
+	"createdAt": "2022-10-13T11:27:46.103Z",
+	"createdBy": "cezar",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "ce47ccf3-5c99-4cfe-9232-26ef686fa4e7",
+			"path": "/reviv_coffeepods_demo",
+			"method": "GET",
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"description": [
+						"==OBJECT STRING==",
+						"{ \"fieldName\": \"value\"}  or { \"fieldName\": \"Not(value)\"} or { \"fieldName\": \"Between(1,10)\"} or {fieldName: In([\"value1\", \"value2\"])}",
+						" Other operators - LessThan(value), LessThanOrEqual(value), MoreThan(value), MoreThanOrEqual(value), Like(value), Any(value), IsNull(value), Raw(value)"
+					]
+				},
+				{
+					"name": "select",
+					"description": "fieldName1,fieldName2,fieldName3"
+				},
+				{
+					"name": "take",
+					"description": "Limit (paginated) - max number of entities that should be taken"
+				},
+				{
+					"name": "skip",
+					"description": "Offset (paginated) from where entities should be taken"
+				},
+				{
+					"name": "order",
+					"description": "{\"fieldName1\": \"ASC\", \"fieldName2\": \"DESC\"}"
+				}
+			],
+			"content": [],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "array",
+							"name": "reviv_coffeepods_demo"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "2ac6df4d-d95b-4aa6-abd1-6169fe176b77",
+			"path": "/reviv_coffeepods_demo",
+			"method": "PUT",
+			"headers": [],
+			"parameters": [],
+			"content": [
+				{
+					"objectType": "array",
+					"name": "reviv_coffeepods_demo"
+				}
+			],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "array",
+							"name": "reviv_coffeepods_demo"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "eb9b61ef-14fc-4a7d-83f8-89f1509fa213",
+			"path": "/reviv_coffeepods_demo",
+			"method": "POST",
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"example": [
+						"==OBJECT STRING==",
+						"{ \"fieldName\": \"value\"}  or { \"fieldName\": \"Not(value)\"} or { \"fieldName\": \"Between(1,10)\"} or {fieldName: In([\"value1\", \"value2\"])}",
+						" Other operators - LessThan(value), LessThanOrEqual(value), MoreThan(value), MoreThanOrEqual(value), Like(value), Any(value), IsNull(value), Raw(value)"
+					]
+				}
+			],
+			"content": [
+				{
+					"objectType": "array",
+					"name": "reviv_coffeepods_demo"
+				}
+			],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "array",
+							"name": "reviv_coffeepods_demo"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "cc759c00-e94a-4cb4-85b7-b161f5dcbe0c",
+			"path": "/reviv_coffeepods_demo",
+			"method": "DELETE",
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"example": [
+						"==OBJECT STRING==",
+						"{ \"fieldName\": \"value\"}  or { \"fieldName\": \"Not(value)\"} or { \"fieldName\": \"Between(1,10)\"} or {fieldName: In([\"value1\", \"value2\"])}",
+						" Other operators - LessThan(value), LessThanOrEqual(value), MoreThan(value), MoreThanOrEqual(value), Like(value), Any(value), IsNull(value), Raw(value)"
+					]
+				}
+			],
+			"content": [],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "array",
+							"name": "reviv_coffeepods_demo"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "6c9dc90e-8275-4907-c0e7-57d1ce501bf9",
+			"path": "/reviv_coffeepods_demo/count",
+			"method": "GET",
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"description": [
+						"==OBJECT STRING==",
+						"{ \"fieldName\": \"value\"}  or { \"fieldName\": \"Not(value)\"} or { \"fieldName\": \"Between(1,10)\"} or {fieldName: In([\"value1\", \"value2\"])}",
+						" Other operators - LessThan(value), LessThanOrEqual(value), MoreThan(value), MoreThanOrEqual(value), Like(value), Any(value), IsNull(value), Raw(value)"
+					]
+				}
+			],
+			"content": [],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "count"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		}
+	],
+	"definitions": [
+		{
+			"id": "066a1c34-3423-42b2-9dad-9a81a5539c85",
+			"name": "reviv_coffeepods_demo",
+			"properties": [
+				{
+					"id": "fe4d611a-5cae-4b93-d9fe-31cb3d94712f",
+					"parent": "",
+					"name": "id",
+					"description": "Unique record ID",
+					"objectType": "string"
+				},
+				{
+					"id": "7d250c6a-4e06-47fc-9d14-fd54b246fe8c",
+					"parent": "",
+					"name": "ImagePod",
+					"objectType": "string"
+				},
+				{
+					"id": "ffc50c64-8071-49c2-ec92-581662922341",
+					"parent": "",
+					"name": "TitlePod",
+					"objectType": "string"
+				},
+				{
+					"id": "b96d79b9-5755-49bd-ed9b-d6893b51f195",
+					"parent": "",
+					"name": "DescriptionPod",
+					"objectType": "string"
+				},
+				{
+					"id": "863f8cf0-b643-484b-c0ab-d7e12f463bb7",
+					"parent": "",
+					"name": "FilterValue",
+					"objectType": "string"
+				},
+				{
+					"id": "4f1c5f09-029b-4e4d-cb51-90a5b03f3f45",
+					"parent": "",
+					"name": "createdAt",
+					"description": "Date when record was created",
+					"objectType": "number"
+				},
+				{
+					"id": "f09ba24e-e955-4077-8cbf-758499515582",
+					"parent": "",
+					"name": "createdBy",
+					"description": "Created By",
+					"objectType": "string"
+				},
+				{
+					"id": "c647c575-5bbb-4b9b-f7de-75c2df166161",
+					"parent": "",
+					"name": "updatedAt",
+					"description": "Date when record was updated",
+					"objectType": "number"
+				},
+				{
+					"id": "4a80c327-3d3d-40a8-ace7-349f7c1db273",
+					"parent": "",
+					"name": "updatedBy",
+					"description": "Updated By",
+					"objectType": "string"
+				}
+			]
+		},
+		{
+			"id": "9fcf8256-4966-4bb9-9f03-cc4a07f8bcc2",
+			"name": "Error",
+			"properties": [
+				{
+					"id": "a22952e0-3fc0-4810-a350-e507aeb4cea5",
+					"parent": "",
+					"name": "status",
+					"objectType": "string"
+				},
+				{
+					"id": "cb4b9b28-6896-418c-f4e3-32ea81e243ba",
+					"parent": "",
+					"name": "message",
+					"objectType": "string"
+				}
+			]
+		},
+		{
+			"id": "e1f331ee-a4a4-412f-db3b-2d4616098d8f",
+			"name": "count",
+			"properties": [
+				{
+					"id": "7eafe8d4-975a-45c3-bc5e-851a1e9dd00c",
+					"parent": "",
+					"name": "count",
+					"objectType": "number"
+				}
+			]
+		}
+	],
+	"documentation": [],
+	"name": "API reviv_coffeepods_demo",
+	"endpoint": "/api/entity",
+	"ver": "22.12.12.1256",
+	"version": null,
+	"description": null,
+	"mediaType": "application/json",
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "table",
+	"about": null,
+	"enableProxy": false,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": true,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": false,
+	"useOwnProcess": false,
+	"package": "6a88e9ef-1b7a-ed11-9f60-000d3a6554d3",
+	"apiGroup": null,
+	"apiFormat": 0,
+	"roles": []
+}

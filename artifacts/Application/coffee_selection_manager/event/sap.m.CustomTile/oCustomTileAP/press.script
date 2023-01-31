@@ -1,0 +1,6 @@
+oApp.to(oPageAssignPods);
+apioRestAPIGetPods();
+apioRestAPIGetAnswersForPods();
+// oApp.to(oPagePods);
+// apioRestAPIGetAnswer();
+// configInputPod();

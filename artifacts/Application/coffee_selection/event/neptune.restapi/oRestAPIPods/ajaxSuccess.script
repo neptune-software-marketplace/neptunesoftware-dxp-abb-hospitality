@@ -1,0 +1,9 @@
+var pods = JSON.parse(xhr.responseText);
+
+console.log(pods.length);
+
+var coffeePods = pods.length;
+
+var userName = oInputName.getValue();
+
+oTitleResult.setText(userName + ", based on your choices, we have recommended from our " + coffeePods + " coffee selection, the following pods:");

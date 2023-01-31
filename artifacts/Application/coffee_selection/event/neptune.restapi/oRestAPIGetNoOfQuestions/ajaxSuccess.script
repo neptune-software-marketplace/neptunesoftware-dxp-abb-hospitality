@@ -1,0 +1,8 @@
+var questionResponse = JSON.parse(xhr.responseText);
+console.log(questionResponse)
+
+var questionLength = questionResponse.length;
+console.log("questionLength");
+console.log(questionLength);
+
+oTextQLengthHidden.setText(questionLength);

@@ -1,0 +1,10 @@
+var answers = JSON.parse(xhr.responseText);
+
+console.log(answers);
+
+var newID = answers.length + 1;
+
+console.log("newID");
+console.log(newID);
+
+// oTextQuestionIDHidden.setText(newID);

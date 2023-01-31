@@ -1,0 +1,330 @@
+{
+	"id": "e14bba51-3051-ed11-ade6-a085fc67ade0",
+	"createdAt": "2022-10-21T11:05:49.970Z",
+	"createdBy": "lloyd.trevarthen@neptune-software.com",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "e6e9f121-ea4a-4851-db94-508c2b468e38",
+			"path": "/reviv_me_questions_2",
+			"method": "GET",
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"description": [
+						"==OBJECT STRING==",
+						"{ \"fieldName\": \"value\"}  or { \"fieldName\": \"Not(value)\"} or { \"fieldName\": \"Between(1,10)\"} or {fieldName: In([\"value1\", \"value2\"])}",
+						" Other operators - LessThan(value), LessThanOrEqual(value), MoreThan(value), MoreThanOrEqual(value), Like(value), Any(value), IsNull(value), Raw(value)"
+					]
+				},
+				{
+					"name": "select",
+					"description": "fieldName1,fieldName2,fieldName3"
+				},
+				{
+					"name": "take",
+					"description": "Limit (paginated) - max number of entities that should be taken"
+				},
+				{
+					"name": "skip",
+					"description": "Offset (paginated) from where entities should be taken"
+				},
+				{
+					"name": "order",
+					"description": "{\"fieldName1\": \"ASC\", \"fieldName2\": \"DESC\"}"
+				}
+			],
+			"content": [],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "array",
+							"name": "reviv_me_questions_2"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "2ffb608b-564c-4ae7-d1df-b207e61e5787",
+			"path": "/reviv_me_questions_2",
+			"method": "PUT",
+			"headers": [],
+			"parameters": [],
+			"content": [
+				{
+					"objectType": "array",
+					"name": "reviv_me_questions_2"
+				}
+			],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "array",
+							"name": "reviv_me_questions_2"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "b393616d-7ddd-45f8-a5e4-8bf5a0ad40f8",
+			"path": "/reviv_me_questions_2",
+			"method": "POST",
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"example": [
+						"==OBJECT STRING==",
+						"{ \"fieldName\": \"value\"}  or { \"fieldName\": \"Not(value)\"} or { \"fieldName\": \"Between(1,10)\"} or {fieldName: In([\"value1\", \"value2\"])}",
+						" Other operators - LessThan(value), LessThanOrEqual(value), MoreThan(value), MoreThanOrEqual(value), Like(value), Any(value), IsNull(value), Raw(value)"
+					]
+				}
+			],
+			"content": [
+				{
+					"objectType": "array",
+					"name": "reviv_me_questions_2"
+				}
+			],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "array",
+							"name": "reviv_me_questions_2"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "2ebb10ff-3fa5-4e82-d4dc-92cd84e7ac93",
+			"path": "/reviv_me_questions_2",
+			"method": "DELETE",
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"example": [
+						"==OBJECT STRING==",
+						"{ \"fieldName\": \"value\"}  or { \"fieldName\": \"Not(value)\"} or { \"fieldName\": \"Between(1,10)\"} or {fieldName: In([\"value1\", \"value2\"])}",
+						" Other operators - LessThan(value), LessThanOrEqual(value), MoreThan(value), MoreThanOrEqual(value), Like(value), Any(value), IsNull(value), Raw(value)"
+					]
+				}
+			],
+			"content": [],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "array",
+							"name": "reviv_me_questions_2"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "1524fbd4-8e50-4682-96e1-cbe1a71ad1ce",
+			"path": "/reviv_me_questions_2/count",
+			"method": "GET",
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"description": [
+						"==OBJECT STRING==",
+						"{ \"fieldName\": \"value\"}  or { \"fieldName\": \"Not(value)\"} or { \"fieldName\": \"Between(1,10)\"} or {fieldName: In([\"value1\", \"value2\"])}",
+						" Other operators - LessThan(value), LessThanOrEqual(value), MoreThan(value), MoreThanOrEqual(value), Like(value), Any(value), IsNull(value), Raw(value)"
+					]
+				}
+			],
+			"content": [],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "count"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		}
+	],
+	"definitions": [
+		{
+			"id": "5b649879-0def-4728-9d3e-6eebef216756",
+			"name": "reviv_me_questions_2",
+			"properties": [
+				{
+					"id": "18c5792f-50f7-4876-c387-203b95be20b8",
+					"parent": "",
+					"name": "id",
+					"description": "Unique record ID",
+					"objectType": "string"
+				},
+				{
+					"id": "876937a2-aeaa-4ac6-9b29-2b6597c173f7",
+					"parent": "",
+					"name": "questionNumber",
+					"objectType": "string"
+				},
+				{
+					"id": "234cd524-4712-4f92-8ff2-8ac428148842",
+					"parent": "",
+					"name": "questionText",
+					"objectType": "string"
+				},
+				{
+					"id": "1c829573-895d-4809-d86a-f803a100d4f3",
+					"parent": "",
+					"name": "createdAt",
+					"description": "Date when record was created",
+					"objectType": "number"
+				},
+				{
+					"id": "6ba515dd-88bf-430b-e540-caf655e97e00",
+					"parent": "",
+					"name": "createdBy",
+					"description": "Created By",
+					"objectType": "string"
+				},
+				{
+					"id": "d5d2a058-46fd-4de1-a669-23a92f915069",
+					"parent": "",
+					"name": "updatedAt",
+					"description": "Date when record was updated",
+					"objectType": "number"
+				},
+				{
+					"id": "c7fafed0-e6fc-4ced-c04e-7ba52e2b2973",
+					"parent": "",
+					"name": "updatedBy",
+					"description": "Updated By",
+					"objectType": "string"
+				}
+			]
+		},
+		{
+			"id": "b25f2337-57f9-4ee0-b4c1-54bb886c111c",
+			"name": "Error",
+			"properties": [
+				{
+					"id": "37523814-1e3b-4a05-bce7-c1c66a5518c6",
+					"parent": "",
+					"name": "status",
+					"objectType": "string"
+				},
+				{
+					"id": "c92c6e64-14ae-4e75-961c-4af888cdd920",
+					"parent": "",
+					"name": "message",
+					"objectType": "string"
+				}
+			]
+		},
+		{
+			"id": "dde25a9c-dc09-4700-ca1b-d847da7ce9fb",
+			"name": "count",
+			"properties": [
+				{
+					"id": "2dcf863b-19aa-4765-d75e-eeb87e87a645",
+					"parent": "",
+					"name": "count",
+					"objectType": "number"
+				}
+			]
+		}
+	],
+	"documentation": [],
+	"name": "API reviv_me_questions_2",
+	"endpoint": "/api/entity",
+	"ver": "22.12.12.1257",
+	"version": null,
+	"description": null,
+	"mediaType": "application/json",
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "table",
+	"about": null,
+	"enableProxy": false,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": true,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": false,
+	"useOwnProcess": false,
+	"package": "6a88e9ef-1b7a-ed11-9f60-000d3a6554d3",
+	"apiGroup": null,
+	"apiFormat": 0,
+	"roles": []
+}

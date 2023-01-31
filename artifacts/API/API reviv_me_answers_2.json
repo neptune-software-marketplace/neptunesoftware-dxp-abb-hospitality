@@ -1,0 +1,348 @@
+{
+	"id": "0835b359-3051-ed11-ade6-a085fc67ade0",
+	"createdAt": "2022-10-21T11:06:03.390Z",
+	"createdBy": "lloyd.trevarthen@neptune-software.com",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "6b118264-8394-43d3-de8e-47339d9fa176",
+			"path": "/reviv_me_answers_2",
+			"method": "GET",
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"description": [
+						"==OBJECT STRING==",
+						"{ \"fieldName\": \"value\"}  or { \"fieldName\": \"Not(value)\"} or { \"fieldName\": \"Between(1,10)\"} or {fieldName: In([\"value1\", \"value2\"])}",
+						" Other operators - LessThan(value), LessThanOrEqual(value), MoreThan(value), MoreThanOrEqual(value), Like(value), Any(value), IsNull(value), Raw(value)"
+					]
+				},
+				{
+					"name": "select",
+					"description": "fieldName1,fieldName2,fieldName3"
+				},
+				{
+					"name": "take",
+					"description": "Limit (paginated) - max number of entities that should be taken"
+				},
+				{
+					"name": "skip",
+					"description": "Offset (paginated) from where entities should be taken"
+				},
+				{
+					"name": "order",
+					"description": "{\"fieldName1\": \"ASC\", \"fieldName2\": \"DESC\"}"
+				}
+			],
+			"content": [],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "array",
+							"name": "reviv_me_answers_2"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "b66da616-3643-4dc1-e669-d3f392fc1c99",
+			"path": "/reviv_me_answers_2",
+			"method": "PUT",
+			"headers": [],
+			"parameters": [],
+			"content": [
+				{
+					"objectType": "array",
+					"name": "reviv_me_answers_2"
+				}
+			],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "array",
+							"name": "reviv_me_answers_2"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "df62302a-4650-4d5f-fd31-f56072aaa0e4",
+			"path": "/reviv_me_answers_2",
+			"method": "POST",
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"example": [
+						"==OBJECT STRING==",
+						"{ \"fieldName\": \"value\"}  or { \"fieldName\": \"Not(value)\"} or { \"fieldName\": \"Between(1,10)\"} or {fieldName: In([\"value1\", \"value2\"])}",
+						" Other operators - LessThan(value), LessThanOrEqual(value), MoreThan(value), MoreThanOrEqual(value), Like(value), Any(value), IsNull(value), Raw(value)"
+					]
+				}
+			],
+			"content": [
+				{
+					"objectType": "array",
+					"name": "reviv_me_answers_2"
+				}
+			],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "array",
+							"name": "reviv_me_answers_2"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "01b27aa8-9104-405e-be96-1830cfe138c5",
+			"path": "/reviv_me_answers_2",
+			"method": "DELETE",
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"example": [
+						"==OBJECT STRING==",
+						"{ \"fieldName\": \"value\"}  or { \"fieldName\": \"Not(value)\"} or { \"fieldName\": \"Between(1,10)\"} or {fieldName: In([\"value1\", \"value2\"])}",
+						" Other operators - LessThan(value), LessThanOrEqual(value), MoreThan(value), MoreThanOrEqual(value), Like(value), Any(value), IsNull(value), Raw(value)"
+					]
+				}
+			],
+			"content": [],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "array",
+							"name": "reviv_me_answers_2"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "b6b23734-0323-43dc-d317-a90c2550d5a1",
+			"path": "/reviv_me_answers_2/count",
+			"method": "GET",
+			"headers": [],
+			"parameters": [
+				{
+					"name": "where",
+					"description": [
+						"==OBJECT STRING==",
+						"{ \"fieldName\": \"value\"}  or { \"fieldName\": \"Not(value)\"} or { \"fieldName\": \"Between(1,10)\"} or {fieldName: In([\"value1\", \"value2\"])}",
+						" Other operators - LessThan(value), LessThanOrEqual(value), MoreThan(value), MoreThanOrEqual(value), Like(value), Any(value), IsNull(value), Raw(value)"
+					]
+				}
+			],
+			"content": [],
+			"responses": [
+				{
+					"status": 200,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "count"
+						}
+					]
+				},
+				{
+					"status": 400,
+					"headers": [],
+					"content": [
+						{
+							"objectType": "object",
+							"name": "Error"
+						}
+					]
+				}
+			]
+		}
+	],
+	"definitions": [
+		{
+			"id": "0762a990-5525-46cb-a776-f364110db053",
+			"name": "reviv_me_answers_2",
+			"properties": [
+				{
+					"id": "4289bcf0-f362-42d6-81d2-5cb2372431b4",
+					"parent": "",
+					"name": "id",
+					"description": "Unique record ID",
+					"objectType": "string"
+				},
+				{
+					"id": "a5fc9f7a-80e7-43e3-fec0-b462e30d8e87",
+					"parent": "",
+					"name": "questionNumber",
+					"objectType": "string"
+				},
+				{
+					"id": "e65bfa70-3a21-49a3-a18c-e5b690be0249",
+					"parent": "",
+					"name": "answerText",
+					"objectType": "string"
+				},
+				{
+					"id": "af02d9b3-1da3-4f8e-e543-5d0a960320f3",
+					"parent": "",
+					"name": "answerValue",
+					"objectType": "string"
+				},
+				{
+					"id": "21324bc8-eec6-4f9d-b1d2-b471616823f8",
+					"parent": "",
+					"name": "answerDescription",
+					"objectType": "string"
+				},
+				{
+					"id": "c81ea738-d88a-46e6-e234-16a2e374ebd9",
+					"parent": "",
+					"name": "answerImage",
+					"objectType": "string"
+				},
+				{
+					"id": "fe942093-9f64-4d66-8bb9-5b9e36083fcf",
+					"parent": "",
+					"name": "createdAt",
+					"description": "Date when record was created",
+					"objectType": "number"
+				},
+				{
+					"id": "15fbbaf7-a1f5-4555-efef-e98d2c767a4b",
+					"parent": "",
+					"name": "createdBy",
+					"description": "Created By",
+					"objectType": "string"
+				},
+				{
+					"id": "a8fb5aa8-7c84-4cc7-9a52-e8595c8c6d3b",
+					"parent": "",
+					"name": "updatedAt",
+					"description": "Date when record was updated",
+					"objectType": "number"
+				},
+				{
+					"id": "793ffc31-c6f3-477d-d527-c224be9358be",
+					"parent": "",
+					"name": "updatedBy",
+					"description": "Updated By",
+					"objectType": "string"
+				}
+			]
+		},
+		{
+			"id": "90e452b9-a2de-4ef9-ba5a-8d1d062636a1",
+			"name": "Error",
+			"properties": [
+				{
+					"id": "bcc4600c-bfce-4987-90d8-07b7fa221627",
+					"parent": "",
+					"name": "status",
+					"objectType": "string"
+				},
+				{
+					"id": "5f91f58d-5bf9-4fa2-c910-d9f292ea768e",
+					"parent": "",
+					"name": "message",
+					"objectType": "string"
+				}
+			]
+		},
+		{
+			"id": "3f1c3ed6-af91-4e5f-ce03-a00ec4722a3b",
+			"name": "count",
+			"properties": [
+				{
+					"id": "8b7b96e1-87eb-4ac1-db6e-18b5a06dc6fd",
+					"parent": "",
+					"name": "count",
+					"objectType": "number"
+				}
+			]
+		}
+	],
+	"documentation": [],
+	"name": "API reviv_me_answers_2",
+	"endpoint": "/api/entity",
+	"ver": "22.12.12.1257",
+	"version": null,
+	"description": null,
+	"mediaType": "application/json",
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "table",
+	"about": null,
+	"enableProxy": false,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": true,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": false,
+	"useOwnProcess": false,
+	"package": "6a88e9ef-1b7a-ed11-9f60-000d3a6554d3",
+	"apiGroup": null,
+	"apiFormat": 0,
+	"roles": []
+}

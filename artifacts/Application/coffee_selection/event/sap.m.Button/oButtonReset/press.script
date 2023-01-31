@@ -1,0 +1,21 @@
+oButtonSubmit.setVisible(false);
+
+//clearEverything();
+oInputName.setValue("");
+oInputAge.setValue("");
+oButtonQ2.setVisible(true);
+oApp.to(oPageDetails);
+
+//Clears the ModelArrayAnswers
+modeloModelArrayMyAnswers.setData([]);
+questionNumber = 1;
+console.log(questionNumber);
+
+getQuestion();
+
+
+if (sap.n) {
+     oLayoutMain.to(localViewID+'--oPage');
+} else {
+    oLayoutMain.to('oPage');
+}

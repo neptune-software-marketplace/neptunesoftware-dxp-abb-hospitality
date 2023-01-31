@@ -1,0 +1,81 @@
+{
+	"id": "caf4806d-074e-ed11-a27c-dc984005a2a9",
+	"createdAt": "2022-10-17T10:35:33.750Z",
+	"createdBy": "cezar",
+	"extUserRoles": [],
+	"extUserDepartments": [],
+	"catOrder": [
+		"2339dc7f-074e-ed11-a27c-dc984005a2a9"
+	],
+	"layout": [
+		{
+			"id": "2e3f1362-1806-4f84-aec2-b9c00f058a18",
+			"css": [
+				"==OBJECT STRING==",
+				".nepCatTitle.sapMTitle {",
+				"    color: #34618700;",
+				"}"
+			],
+			"name": "Layout",
+			"active": true,
+			"style": "<style>.nepTopMenu { border-bottom: 1px solid #878787 !important; }.nepCatTitle.sapMTitle {    color: #34618700;}</style>",
+			"topBorderColor": "#878787"
+		}
+	],
+	"config": {
+		"enhancement": ""
+	},
+	"enhancement": [],
+	"name": "Hospitality_Launchpad",
+	"title": "Hospitality",
+	"description": null,
+	"startApp": null,
+	"startWebApp": null,
+	"customLogo": "",
+	"launchpadApp": "planet9_launchpad_standard",
+	"hideSidemenu": false,
+	"ui5Version": null,
+	"ui5Url": null,
+	"ui5Theme": null,
+	"header": "",
+	"customTheme": null,
+	"isExternal": false,
+	"emailPattern": null,
+	"loginApp": null,
+	"enableNotifications": false,
+	"firebaseProjectId": null,
+	"firebaseAppId": null,
+	"defaultLoginIDP": null,
+	"publicAccess": false,
+	"css": null,
+	"clientRequestTimeout": 120,
+	"limitWidth": false,
+	"searchBackgroundType": null,
+	"searchBackgroundColor": null,
+	"searchBackgroundShade": null,
+	"usedBackgroundType": null,
+	"usedBackgroundColor": null,
+	"usedBackgroundShade": null,
+	"searchEnableShadeCalc": null,
+	"usedEnableShadeCalc": null,
+	"enableTrace": false,
+	"ver": "23.1.31.1021",
+	"pwa_enable": false,
+	"pwa_customImageIos": null,
+	"pwa_customImageAndroidOld": null,
+	"pwa_customImageAndroidNew": null,
+	"pwa_displayMode": null,
+	"pwa_themeColor": null,
+	"pwa_backgroundColor": null,
+	"passwordResetEmail": null,
+	"activationCodeEmail": null,
+	"package": "6a88e9ef-1b7a-ed11-9f60-000d3a6554d3",
+	"cat": [
+		{
+			"id": "2339dc7f-074e-ed11-a27c-dc984005a2a9",
+			"name": "coffee_selection_tilegroup",
+			"title": "Portal",
+			"ver": "23.1.31.1023"
+		}
+	]
+}

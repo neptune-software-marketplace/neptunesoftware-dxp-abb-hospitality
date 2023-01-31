@@ -1,0 +1,3 @@
+var answersPods = JSON.parse(xhr.responseText);
+
+console.log(answersPods);

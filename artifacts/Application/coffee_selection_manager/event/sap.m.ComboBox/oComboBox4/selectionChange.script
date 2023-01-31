@@ -1,0 +1,12 @@
+var selectedItem = oComboBox4.getSelectedItem()
+var selectedData = selectedItem.getBindingContext()
+console.log(selectedData.getObject())
+
+var data = selectedData.getObject();
+
+var answerPod = data.answerText;
+
+console.log(answerPod);
+
+oTextAnsValue2.setText(answerPod);
+//oTextQNumberHidden1.setText(answerPod);

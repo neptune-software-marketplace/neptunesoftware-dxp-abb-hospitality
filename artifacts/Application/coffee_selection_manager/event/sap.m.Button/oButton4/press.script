@@ -1,0 +1,36 @@
+//submitOption();
+//submitOptionPod();
+// Call the function to clear the form
+//clearFormPod();
+
+let final_data = {}
+
+final_data.id = oTextPodIDHidden.getText();
+let value = oTextAnsValue2.getText();
+
+console.log(final_data.id);
+console.log(value);
+
+// Add attributes to the Object, based on the inputs
+//final_data.Status = "Complete";
+
+// Assign the data object to "Options"
+//var options = { data: final_data };
+
+var options = {
+    data: {
+        "id": final_data.id,
+        "FilterValue": value,
+    }
+};
+
+// Log the Object
+console.log(final_data);
+
+// Trigger the API and pass the "Options"
+apioRestAPIAssignPod(options);
+
+sap.m.MessageToast.show("Pod Assign Successfully");
+
+oComboBox3.setValue("");
+oComboBox4.setValue("");

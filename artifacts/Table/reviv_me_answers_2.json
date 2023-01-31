@@ -1,0 +1,43 @@
+{
+	"id": "a1c8480a-3051-ed11-ade6-a085fc67ade0",
+	"createdAt": "2022-10-21T11:03:51.220Z",
+	"createdBy": "lloyd.trevarthen@neptune-software.com",
+	"fields": [
+		{
+			"id": "99c5907f-0a74-4c6d-ac5e-cec63997cbcb",
+			"fieldName": "questionNumber",
+			"fieldType": "text"
+		},
+		{
+			"id": "4cb981ad-c6cd-40d9-ca7a-9a1ba847feb0",
+			"fieldName": "answerText",
+			"fieldType": "text"
+		},
+		{
+			"id": "4deb2c81-123a-4a04-be3f-4d1c0fecc385",
+			"fieldName": "answerValue",
+			"fieldType": "text",
+			"isNullable": true
+		},
+		{
+			"id": "68ce2e6b-16f5-4009-ace2-c092f10564be",
+			"fieldName": "answerDescription",
+			"fieldType": "text"
+		},
+		{
+			"id": "637ed18f-dc5f-4c89-c128-11591493324a",
+			"fieldName": "answerImage",
+			"fieldType": "text"
+		}
+	],
+	"indices": [],
+	"foreignKeys": [],
+	"name": "reviv_me_answers_2",
+	"description": null,
+	"ver": "23.1.25.1040",
+	"enableAudit": false,
+	"includeDataInPackage": true,
+	"package": "6a88e9ef-1b7a-ed11-9f60-000d3a6554d3",
+	"rolesRead": [],
+	"rolesWrite": []
+}

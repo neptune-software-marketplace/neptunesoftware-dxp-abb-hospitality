@@ -1,0 +1,74 @@
+[
+	{
+		"id": "baa46585-3264-476e-b662-9717449d8b6f",
+		"createdAt": "1671185772770",
+		"updatedAt": "1675159743739",
+		"createdBy": "admin",
+		"updatedBy": "cezar.strugariu@neptune-software.com",
+		"questionNumber": "2",
+		"answerText": "Savoury",
+		"answerValue": "TRUE",
+		"answerDescription": "If you like to start the day with savoury foods like ham, cheese or eggs.",
+		"answerImage": "https://dxpdemo.neptune-software.cloud/media/root/Hospitality/savoury.webp"
+	},
+	{
+		"id": "9f706ab0-9223-431e-8f2a-52c9d45b5ad1",
+		"createdAt": "1671185772770",
+		"updatedAt": "1675159720545",
+		"createdBy": "admin",
+		"updatedBy": "cezar.strugariu@neptune-software.com",
+		"questionNumber": "3",
+		"answerText": "A moment of pleasure",
+		"answerValue": "TRUE",
+		"answerDescription": "An afternoon cup of coffee is a nice treat.",
+		"answerImage": "https://dxpdemo.neptune-software.cloud/media/root/Hospitality/relax_read.jpg"
+	},
+	{
+		"id": "664981c6-e46f-47fc-962a-d1afa00f0f79",
+		"createdAt": "1671185772770",
+		"updatedAt": "1675159720545",
+		"createdBy": "admin",
+		"updatedBy": "cezar.strugariu@neptune-software.com",
+		"questionNumber": "1",
+		"answerText": "Without Milk",
+		"answerValue": "FALSE",
+		"answerDescription": "If you want to start the day with a strong coffee taste.",
+		"answerImage": "https://dxpdemo.neptune-software.cloud/media/root/Hospitality/without milk.webp"
+	},
+	{
+		"id": "60f8b0d4-d851-46b5-96ce-30e69dbd7453",
+		"createdAt": "1671185772770",
+		"updatedAt": "1675159720545",
+		"createdBy": "admin",
+		"updatedBy": "cezar.strugariu@neptune-software.com",
+		"questionNumber": "3",
+		"answerText": "A great way to start the day",
+		"answerValue": "FALSE",
+		"answerDescription": "Every morning needs to start with a cup of coffee.",
+		"answerImage": "https://dxpdemo.neptune-software.cloud/media/root/Hospitality/work.jpg"
+	},
+	{
+		"id": "2e7c9c6f-f4dc-4677-bb15-e6c4721f446f",
+		"createdAt": "1671185772770",
+		"updatedAt": "1675159625764",
+		"createdBy": "admin",
+		"updatedBy": "cezar.strugariu@neptune-software.com",
+		"questionNumber": "1",
+		"answerText": "With Milk",
+		"answerValue": "TRUE",
+		"answerDescription": "If you want to start the day with the taste of a creamy coffee.",
+		"answerImage": "https://dxpdemo.neptune-software.cloud/media/root/Hospitality/with milk1.webp"
+	},
+	{
+		"id": "118b014b-4280-4cfe-acb6-3f4bd69d2952",
+		"createdAt": "1671185772770",
+		"updatedAt": "1675159720545",
+		"createdBy": "admin",
+		"updatedBy": "cezar.strugariu@neptune-software.com",
+		"questionNumber": "2",
+		"answerText": "Sweet",
+		"answerValue": "FALSE",
+		"answerDescription": "If you like to start the day on a sweet note.",
+		"answerImage": "https://dxpdemo.neptune-software.cloud/media/root/Hospitality/sweet.webp"
+	}
+]
