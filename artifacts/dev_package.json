@@ -7,7 +7,7 @@
 	},
 	"name": "neptunesoftware-dxp-abb-hospitality",
 	"description": "DXP Hospitality Scenario - Coffee Selection",
-	"ver": "23.1.31.1024",
+	"ver": "23.1.31.1025",
 	"enableCICD": true,
 	"apps": [
 		{

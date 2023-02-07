@@ -68,13 +68,13 @@
 			"id": "dd3d16aa-074e-ed11-a27c-dc984005a2a9",
 			"name": "Coffee_Selection",
 			"title": "Coffee Selection",
-			"ver": "23.1.31.1016"
+			"ver": "23.2.7.102"
 		},
 		{
 			"id": "b727feb4-074e-ed11-a27c-dc984005a2a9",
 			"name": "Coffee_Selection_Manager",
 			"title": "Administration",
-			"ver": "23.1.31.1017"
+			"ver": "23.2.7.102"
 		}
 	],
 	"tilegroups": []
